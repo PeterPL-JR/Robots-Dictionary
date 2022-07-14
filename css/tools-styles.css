@@ -1,0 +1,150 @@
+:root {
+    --main-width: 100px;
+    --main-content-width: 75px;
+
+    --width: 60px;
+    --content-width: 40px;
+
+    --transition: 0.2s;
+}
+
+/* Common Attributes */
+.tools-group {
+    width: max-content;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Images of Buttons */
+*[class*="tool-button"] .image-div {
+    background: radial-gradient(white, #b6b6b6);
+    border-radius: 50%;
+
+    float: left;
+    position: relative;
+    z-index: 1;
+}
+*[class*="tool-button"] .image-div img {
+    position: relative;
+    z-index: 2;
+}
+*[class*="tool-button"] .link-div {
+    background: linear-gradient(to right bottom, #a0a0a0, white);
+    color: #656565;
+}
+
+/* MAIN Tool Button Styles */
+.main-tool-button {
+    width: max-content;
+    cursor: pointer;
+
+    height: var(--main-width);
+    margin: 20px;
+
+    margin-bottom: 30px;
+    padding-left: 60px !important;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-tool-button 
+.image-div {
+    width: var(--main-width);
+    height: var(--main-width);
+
+    outline: solid #979797 12px;
+    margin-top: -13px;
+}
+.main-tool-button 
+.image-div img {
+    height: var(--main-width);
+}
+.main-tool-button
+.link-div {
+    width: 400px;
+    font: bold 44px 'Caladea';
+    text-shadow: 4px 4px 8px gray;
+    box-shadow: 15px 15px 30px #2e2e2e;
+
+    height: var(--main-content-width);
+    line-height: var(--main-content-width);
+
+    outline: solid #979797 10px;
+    margin-left: 40px;
+
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: var(--transition);
+}
+.main-tool-button:hover 
+.link-div {
+    box-shadow: 25px 25px 30px #5c5c5c;
+    transition: var(--transition);
+}
+.main-tool-button:hover img {
+    width: 130px;
+    height: 130px;
+
+    margin-left: -15px;
+    margin-top: -15px;
+}
+
+/* Button Styles */
+.tool-button {
+    cursor: pointer;
+    float: left;
+
+    height: var(--width);
+    margin: 10px;
+    margin-right: 25px;
+}
+.tool-button 
+.image-div {
+    width: var(--width);
+    height: var(--width);
+
+    outline: solid #a9a9a9 8px;
+    margin-top: -7px;
+}
+.tool-button 
+.image-div img {
+    height: var(--width);
+}
+.tool-button
+.link-div {
+    width: 260px;
+    font: bold 24px 'Caladea';
+    box-shadow: 5px 5px 20px #2e2e2e;
+
+    height: var(--content-width);
+    line-height: var(--content-width);
+
+    outline: solid #898989 6px;
+    margin-left: 40px;
+
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+    transition: var(--transition);
+}
+.tool-button:hover 
+.link-div {
+    box-shadow: 14px 14px 30px #484848;
+    transition: var(--transition);
+}
+.tool-button:hover img {
+    width: 70px;
+    height: 70px;
+
+    margin-left: -5px;
+    margin-top: -5px;
+}
+
+/* Stronger Brightness of Images */
+img[src*="dictionary.png"], img[src*="search.png"] {
+    filter: brightness(130%);
+}
+img[src*="tags.png"], img[src*="folder.png"] {
+    filter: brightness(140%);
+}

@@ -1,0 +1,96 @@
+/* Logo Styles */
+#logo {
+    width: 700px;
+    height: 200px;
+    margin-bottom: 50px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Div of Main Image */
+#image-div {
+    background: radial-gradient(white, gray);
+    outline: solid gray 20px;
+
+    border-radius: 50%;
+    height: 100%;
+    float: left;
+    
+    position: relative;
+    z-index: 2;
+}
+/* Main Image */
+#image-div img {
+    position: relative;
+    z-index: 4;
+    height: 100%;
+}
+
+/* Name "Lang Store" */
+#name-div {
+    margin-left: 90px;
+    height: 100%;
+}
+#name-div > div:first-child {
+    height: 120px;
+    font: bold 80px 'Caladea';
+    line-height: 120px;
+    text-shadow: 3px 3px 10px #5e5e5e;
+
+    outline: solid #8a8a8a 12px;
+    border-radius: 40px;
+
+    color: #4b4b4b;
+    background: linear-gradient(to right bottom,#a9a9a9, white);
+}
+/* Name of Page */
+#page-name {
+    height: 75px;
+    font: bold 34px 'Caladea';
+    color: #3b3b3b;
+    text-shadow: 2px 2px 5px #5e5e5e;
+    
+    background: linear-gradient(to right bottom, #909090, #e0e0e0);
+    outline: solid #8a8a8a 8px;
+    border-radius: 40px;
+    
+    border-top-right-radius: 0px;
+    position: relative;
+    z-index: -1;
+
+    margin-left: 56px;
+    margin-top: -15px;
+    line-height: 100px;
+    text-align: left;
+}
+
+/* Icon of Page */
+#page-icon {
+    height: 50px;
+    width: max-content;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top: 30px;
+}
+#page-icon img {
+    width: 40px;
+    float: left;
+}
+#page-icon div {
+    height: 100%;
+    line-height: 40px;
+    margin-left: 10px;
+    float: left;
+}
+
+/* Body Styles */
+body {
+    margin-top: 38px;
+}
+
+/* Link Styles*/
+a:link, a:visited {
+    text-decoration: none;
+}
