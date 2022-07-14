@@ -142,7 +142,7 @@
 }
 
 /* Stronger Brightness of Images */
-img[src*="dictionary.png"], img[src*="search.png"] {
+img[src*="search.png"] {
     filter: brightness(130%);
 }
 img[src*="tags.png"], img[src*="folder.png"] {

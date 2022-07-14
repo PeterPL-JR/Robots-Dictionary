@@ -36,6 +36,7 @@
     font: bold 80px 'Caladea';
     line-height: 120px;
     text-shadow: 3px 3px 10px #5e5e5e;
+    text-align: center;
 
     outline: solid #8a8a8a 12px;
     border-radius: 40px;
