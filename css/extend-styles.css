@@ -1,11 +1,9 @@
-.word-div {
-    width: 550px;
-    padding: 20px;
-    padding-left: 70px;
+#word-div, #properties-div {
+    padding: 15px;
     margin-bottom: 38px;
     text-align: center;
     
-    background: linear-gradient(to right bottom, #bebebe, #dedede);
+    background: radial-gradient(#d4d3d3, #b6b6b6);
     box-shadow: 25px 25px 30px gray;
     border-radius: 50px;
     outline: solid #a0a0a0 7px;
@@ -14,6 +12,41 @@
     margin-right: auto;
 }
 
+#word-div {
+    width: 550px;
+    padding-left: 70px;
+}
+#properties-div {
+    width: 600px;
+    background: radial-gradient(#efefef, #c5c5c5);
+    outline: solid #b6b6b6 7px;
+
+    padding: 10px;
+    padding-bottom: 20px;
+    margin-top: 50px;
+}
+
+/* Custom Inputs */
+#type-input, #level-input {
+    font: normal 25px 'Arial';
+    height: 32px;
+    color: gray;
+    cursor: pointer;
+    line-height: 32px;
+
+    text-align: center;
+    appearance: none;
+
+    background: linear-gradient(to right bottom, #eaeaea, white);
+    outline: solid gray 3px;
+    border: none;
+    border-radius: 10px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Text Inputs */
 .text-input {
     width: 440px;
     height: 36px;
@@ -42,6 +75,7 @@
     text-align: center;
 }
 
+/* "Dictionary" images with link */
 .text-input + img {
     position: absolute;
     width: 50px;
@@ -51,12 +85,7 @@
     margin-top: -10px;
 }
 
-div.desc {
-    font: bold 27px 'Caladea';
-    margin-bottom: -10px;
-    color: #898989;
-}
-
+/* Icons of inputs */
 .decoration {
     background: radial-gradient(white, #ababab);
     outline: solid #878787 8px;
@@ -78,4 +107,47 @@ div.desc {
 
     margin-left: -5px;
     margin-top: -5px;
+}
+
+/* Divs with description of inputs */
+div.desc {
+    font: bold 27px 'Caladea';
+    margin-bottom: -10px;
+    color: #898989;
+}
+
+#tools-icon {
+    position: absolute;
+    width: 51px;
+    display: none;
+    cursor: pointer;
+    filter: brightness(135%);
+
+    margin-left: 10px;
+    margin-top: -10px;
+}
+
+/* Buttons */
+.extend-button {
+    width: 300px;
+    height: 46px;
+
+    border-radius: 15px;
+    outline: solid #919191 4px;
+    box-shadow: 10px 10px 20px #636363;
+    text-shadow: 2px 2px 4px #989898;
+    background: linear-gradient(to top left, white, #b8b8b8);
+    border: none;
+
+    font: normal 26px 'Tahoma';
+    color: gray;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#save-button {
+    width: 200px;
+    height: 40px;
+    font-size: 25px;
+    margin-bottom: 0;
 }
