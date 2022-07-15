@@ -47,24 +47,25 @@
 <div id="properties-div">
     <!-- Type -->
     <div class='desc'>Typ</div><br>
-    <select onchange="changeType();" id="type-input" style="width: 240px;">
-        <?php
-        
+    <select onchange="changeTypeInput();" id="type-input" style="width: 240px;">
+    <?php
         include 'php/database.php';
         $types_query = mysqli_query($base, "SELECT name_pl FROM types ORDER BY id;");
+
         while($row = mysqli_fetch_row($types_query)) {
             echo "<option>".ucwords($row[0])."</option>";
         }
-
-        ?>
+    ?>
     </select>
     <img src="images/settings.png" id="tools-icon"><br>
 
      <!-- Level -->
     <div class='desc'>Poziom</div><br>
-    <div onclick="changeLevel();" id="level-input" style="width: 150px;">5</div>
+    <div onclick="changeLevelInput();" id="level-input" style="width: 150px;">Brak</div>
 </div>
+
 <button class="extend-button" onclick="addWord();" style="margin-top: 15px;">Dodaj</button>
+<script src="scripts/extend-script.js"></script>
 
 </body>
 </html>
